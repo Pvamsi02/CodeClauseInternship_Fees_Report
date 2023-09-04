@@ -14,7 +14,7 @@ public class GetStudent extends JFrame  implements ActionListener {
 
     Font font = new Font("SANS_SERIF", Font.ITALIC, 15);
     Font font1 = new Font("SANS_SERIF", Font.ITALIC, 20);
-    GetStudent(int uid){
+    GetStudent(){
         ImageIcon icon1=new ImageIcon("src\\iconMain.png","");
         this.setIconImage(icon1.getImage());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

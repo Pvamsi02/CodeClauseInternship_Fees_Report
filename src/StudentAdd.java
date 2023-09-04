@@ -11,7 +11,7 @@ public class StudentAdd extends JFrame implements ActionListener {
     JLabel label1, label2, label3, label4, label5;
     Font font = new Font("SANS_SERIF", Font.ITALIC, 15);
 
-    StudentAdd(int uid) {
+    StudentAdd() {
         ImageIcon icon1 = new ImageIcon("src\\iconMain.png", "");
         this.setIconImage(icon1.getImage());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

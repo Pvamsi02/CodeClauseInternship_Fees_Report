@@ -8,9 +8,7 @@ public class info extends JFrame implements ActionListener
     JButton addStudent,getStudent;
     JLabel title;
     Font font=new Font("SANS_SERIF",Font.ITALIC,15);
-    int uid1;
     info(int uid){
-        uid1=uid;
         ImageIcon icon1=new ImageIcon("src\\iconMain.png","");
         this.setIconImage(icon1.getImage());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,11 +51,11 @@ public class info extends JFrame implements ActionListener
         if(e.getSource()==addStudent)
         {
             dispose();
-            new StudentAdd(uid1);
+            new StudentAdd();
         }
         else if (e.getSource()==getStudent) {
             dispose();
-            new GetStudent(uid1);
+            new GetStudent();
         }
     }
 }
