@@ -6,7 +6,6 @@ import java.awt.print.PrinterException;
 import java.sql.*;
 
 public class GetStudent extends JFrame  implements ActionListener {
-//    Jthis this;
     JTextField regno;
     JLabel label1;
     JButton submit,printbtn,modify;
@@ -135,6 +134,7 @@ public class GetStudent extends JFrame  implements ActionListener {
                 throw new RuntimeException(ex);
             }
             dispose();
+            new info();
         }
     }
 

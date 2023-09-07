@@ -102,7 +102,7 @@ public class AccessPage extends JFrame implements ActionListener, KeyListener
                 st.close();
                 con.close();
                 dispose();
-                new info(uid);
+                new info();
             }
             else {
                 JOptionPane.showMessageDialog(null,"Wrong password try again!","Password Error",JOptionPane.WARNING_MESSAGE);

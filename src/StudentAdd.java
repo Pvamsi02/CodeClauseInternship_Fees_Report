@@ -15,7 +15,7 @@ public class StudentAdd extends JFrame implements ActionListener {
         ImageIcon icon1 = new ImageIcon("src\\iconMain.png", "");
         this.setIconImage(icon1.getImage());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("Add Student");
+        this.setTitle("Student add");
         this.setSize(400, 350);
         this.setLayout(null);
         this.setResizable(false);
@@ -112,6 +112,7 @@ public class StudentAdd extends JFrame implements ActionListener {
                 System.out.println(pst.executeUpdate());
                 JOptionPane.showMessageDialog(null,"Added","confirm",JOptionPane.INFORMATION_MESSAGE);
                 dispose();
+                new info();
                 pst.close();
                 con.close();
             } catch (Exception ex) {
